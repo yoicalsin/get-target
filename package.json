@@ -1,0 +1,39 @@
+{
+   "name": "get-target",
+   "version": "1.0.0",
+   "description": "builder's extractor of a class, for handling of decorators",
+   "main": "index.js",
+   "type": "index.d.ts",
+   "dependencies": {},
+   "devDependencies": {
+      "@types/node": "^13.9.0",
+      "nodemon": "^2.0.2",
+      "prettier": "^1.19.1",
+      "rimraf": "^3.0.2"
+   },
+   "scripts": {
+      "dev": "yarn prebuild & tsc -w",
+      "dev:start": "nodemon index.js",
+      "build": "yarn prebuild & tsc",
+      "build:start": "yarn build & yarn start",
+      "start": "node index.js",
+      "prebuild": "rimraf index.js index.d.ts",
+      "demo": "nodemon demo.js",
+      "demo:start": "node demo.js"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/yoicalsin/get-target.git"
+   },
+   "keywords": [
+      "get-target",
+      "decorator",
+      "typescrípt"
+   ],
+   "author": "Yoni Calsin <helloyonicb@gmail.com>",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/yoicalsin/get-target/issues"
+   },
+   "homepage": "https://github.com/yoicalsin/get-target#readme"
+}
